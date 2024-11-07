@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="st1.css">
+    <script src="java1.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home" class="active">
+        <div class="content-container">
+            <img src="M1.jpg" alt="Profile Image" width="300" height="400">
+            <div class="text-content">
+                <h1>Welcome to My Portfolio</h1>
+                <h2>Hi, I'm Martha Getnet</h2>
+                <h3>Web Developer</h3>
+                <h3>Business Woman</h3>
+                <p>This is my portfolio. Inside, you will find detailed information about myself, my skills, and my contact details.</p>
+                <h4>Thanks for visiting my website!</h4>
+            </div>
+        </div>
+    </main>
+
+    <main id="about">
+        <div class="content-container">
+            <img src="M1.jpg" alt="Profile Image" width="300" height="400">
+            <div class="text-content">
+                <h1>About Me</h1>
+                <h2>Hey, I'm Martha Genet</h2>
+                <p>I come from Addis Ababa and I'm a 3rd-year Computer Science undergraduate student at Mekdela Amba University. I am interested in web development and running my own business.</p>
+                <p>My mom is my role model; she is a strong person who made many sacrifices for me. I love her very much.</p>
+                <h3>Thank you, Mom, I love you!</h3>
+            </div>
+        </div>
+    </main>
+
+    <main id="contact">
+        <div class="content-container">
+            <img src="M1.jpg" alt="Profile Image" width="300" height="400">
+            <div class="text-content">
+                <h1>Contact Me</h1>
+                <p><b>Phone Number:</b> 0984187560</p>
+                <p><b>Email Address:</b> Martinagech12@gmail.com</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+    
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('main');
+            sections.forEach(section => {
+                if (section.id === sectionId) {
+                    section.classList.add('active');
+                } else {
+                    section.classList.remove('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
